@@ -1,19 +1,24 @@
 -- Create tables for raw data to be loaded into
-CREATE TABLE customer_name (
-id INT PRIMARY KEY,
-first_name TEXT,
-last_name TEXT
+CREATE TABLE movie_money (
+rank INT PRIMARY KEY,
+title text,
+production_cost bigint,
+worldwide_gross bigint,
+theaters INT
 );
 
-CREATE TABLE customer_location (
-id INT PRIMARY KEY,
-address TEXT,
-us_state TEXT
+CREATE TABLE movie_info (
+title text,
+genre text,
+IMDB_Rating int,
+Meta_score INT,
+Director text,
+Star1 text,
+Star2 text,
+No_of_Votes int
 );
 
-
--- Joins tables
-SELECT customer_name.id, customer_name.first_name, customer_name.last_name, customer_location.address, customer_location.us_state
-FROM customer_name
-JOIN customer_location
-ON customer_name.id = customer_location.id;
+SELECT movie_money.rank, movie_money.title, movie_money.production_cost, movie_money.worldwide_gross, movie_money.theaters, movie_info.title, movie_info.genre, movie_info.imdb_rating,movie_info.genre,movie_info.meta_score,movie_info.director,movie_info.star1,movie_info.star2,movie_info.no_of_votes
+FROM movie_money
+JOIN movie_info
+ON movie_money.title = movie_info.title;
