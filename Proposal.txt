@@ -1,0 +1,24 @@
+The Last Minutes Proposal
+A Group 23 Production
+
+Team Members: Marcus Gibson & Mitchell Boullt
+
+
+Summary: We are combining two movie datasets to focus on cinematic reviews and overall box office. We want to create a table comparing high movie review scores to their box office revenue. 
+
+Extract: Using two csv datasets from kaggle.com. 
+
+Transform: Join the two datasets and create a name using SQL. We will also perform a data cleaning. 
+
+Load: It will be loaded into a relational database.
+
+List of Datasets:
+
+Movie Reviews:
+https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows?datasetId=1131493
+
+Movie Revenue:
+https://www.kaggle.com/datasets/mitchellharrison/top-500-movies-budget
+
+
+Please reference the README for the final report
