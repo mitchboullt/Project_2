@@ -6,6 +6,8 @@ Transform: To clean it we made sure the titles were spelled the same so the join
 
 Load: The datasets were connected to a relational database so some of the aforementioned questions can be answered through sql queries.
 
+Future Improvments: Add total first monthly streams when added to streamiing site. Add number of awards one and in what categories. If possible add a table with a more in depth breakdown of each movies budget.
+
 List of Datasets:
 
 Movie Reviews:
